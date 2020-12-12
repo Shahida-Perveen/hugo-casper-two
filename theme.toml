@@ -1,17 +1,61 @@
-name = "Casper Two"
-license = "MIT"
-licenselink = "https://github.com/eueung/hugo-casper-two/blob/master/LICENSE.md"
-description = "Port of Casper 2.x from Ghost Foundation"
-homepage = "https://github.com/eueung/hugo-casper-two"
-tags = ["blog","pages","ghost theme"]
-features = ["disqus", "google analytics"]
-min_version=0.31
+baseurl         = "https://shahidaperveen.com"
+theme           = "casper-two"
+languageCode    = "en-US"
+disqusShortname = ""
+paginate        = 6
+#SectionPagesMenu = "main"
 
-[author]
-  name = "Eueung Mulyana"
-  homepage = "https://www.telematika.org/"
+[params]
+  title       = "Shahida Perveen"
+  subtitle    = "Reflections of a Big Little Girl"
 
-[original]
-  name = "Casper"
-  homepage = "https://github.com/TryGhost/Casper"
-  repo = "https://github.com/TryGhost/Casper"
+  cover       = "img/blog-cover.jpg"
+  description = "My First Venture Website"
+  metaDescription = ""
+  googleAnalytics = ""
+  customCSS = []
+  RSSLink = ""
+
+  twitterName = "Mrs_Spali"
+  fbName = "fakeghostShahidaPerveenAli"
+  githubName = "Shahida-Perveen"
+
+  logo = "hugo-logo.png"
+  orgName = "EM"
+  orgWebsite = "https://www.telematika.org"
+  orgDescription = "Here is a description placeholder for your org"
+
+  author = "EM"
+  authorAvatar = "img/ghost-icon.png"
+  authorLocation = "Bandung, ID"
+  authorWebsite = "https://eueung.github.io"
+  authorDescription = "Describe yourself.."
+
+  pageNotFoundTitle = "404 - Page not found"
+
+  #casper or caspertwo
+  singleViewStyle = "casper"
+
+
+[permalinks]
+  post = "/:slug/"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 200
+
+[[menu.main]]
+  name = "Go"
+  url = "/tags/golang/"
+  weight = 100
+
+[[menu.main]]
+  name = "Food"
+  url = "/categories/food/"
+  weight = 99
+
+[[menu.main]]
+  name = "External"
+  url = "https://google.com/"
+  weight = 95
